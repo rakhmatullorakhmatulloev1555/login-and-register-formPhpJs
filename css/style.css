@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap");
+
+:root {
+  --black: #333;
+  --white: #fff;
+  --primary-bc: rgba(76, 68, 228, 0.808);
+  --light-bg: #eee;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--blue);
+}
+body {
+  background-color: #e4e9f7;
+}
+.delete-btn {
+  padding: 10px 30px;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.btn {
+  padding: 10px 30px;
+  background: var(--primary-bc);
+  color: var(--white);
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 10px;
+  width: 100%;
+}
+.nav .btn {
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  opacity: 0.82;
+}
+
+.delete-btn {
+  background-color: var(--exit-button-color);
+}
+
+.delete-btn:hover {
+  opacity: 0.82;
+}
+
+.message {
+  border: 2px solid #ffa109;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  margin: 10px 0;
+  width: 100%;
+  color: #e74c3c;
+  font-size: 20px;
+}
+#error {
+   border: 2px solid #ffa109;
+   border-radius: 5px;
+   padding: 10px;
+   text-align: center;
+   margin: 10px 0;
+   width: 100%;
+   color: #e74c3c;
+   font-size: 20px;
+   display: none;
+ }
+.success_message{
+   text-align: center;
+   padding: 10px;
+   color: #ffa109;
+   font-weight: bold;
+}
+.form__box {
+  width: 450px;
+  margin: 0px 10px;
+}
+.form__box header {
+  font-size: 25px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 10px;
+}
+.form__box form .field {
+  display: flex;
+  margin-bottom: 10px;
+  flex-direction: column;
+}
+.form__box form .input input {
+  height: 40px;
+  width: 100%;
+  font-size: 16px;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 5px;
+}
+.checkcookie {
+  margin: 10px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+}
+.box {
+  background-color: #fdfdfd;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 25px;
+  border-radius: 15px;
+  box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+    0 32px 64px -48px rgba(0, 0, 0, 0.5);
+}
+.nav {
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: 800;
+  margin-top: 20px;
+}
+
+.logo__span {
+  background: #fff;
+  color: #2980b9;
+}
+
+.container .profile {
+  padding: 20px;
+  background-color: var(--white);
+  box-shadow: var(--box-shadow);
+  text-align: center;
+  width: 400px;
+  border-radius: 5px;
+}
+
+.container .profile img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+
+.container .profile h3 {
+  margin: 5px 0;
+  font-size: 20px;
+  color: var(--black);
+}
+
+.container .profile p {
+  margin-top: 20px;
+  color: var(--black);
+  font-size: 20px;
+}
+
+.container .profile p a {
+  color: var(--red);
+}
+
+.container .profile p a:hover {
+  text-decoration: underline;
+}
+
+.update-profile {
+  min-height: 100vh;
+  background-color: var(--light-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.update-profile form {
+  padding: 20px;
+  background-color: var(--white);
+  box-shadow: var(--box-shadow);
+  text-align: center;
+  width: 700px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.update-profile form img {
+  height: 200px;
+  width: 200p;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+
+.update-profile form .flex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 15px;
+}
+
+.update-profile form .flex .inputBox {
+  width: 49%;
+}
+
+.update-profile form .flex .inputBox span {
+  text-align: left;
+  display: block;
+  margin-top: 15px;
+  font-size: 17px;
+  color: var(--black);
+}
+
+.update-profile form .flex .inputBox .box {
+  width: 100%;
+  border-radius: 5px;
+  background-color: var(--light-bg);
+  padding: 12px 14px;
+  font-size: 17px;
+  color: var(--black);
+  margin-top: 10px;
+}
+.captcha{
+   width: 50%;
+   background: yellow;
+   text-align: center;
+   font-size: 24px;
+   font-weight: 700;
+   padding: 5px;
+}
+
+@media (max-width: 650px) {
+  .update-profile form .flex {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+
+  .update-profile form .flex .inputBox {
+    width: 100%;
+  }
+}
